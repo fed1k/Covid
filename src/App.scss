@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .navbar {
   background-color: #ec4c8a;
   display: flex;
@@ -38,12 +44,10 @@ body {
 
 .cards-main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-  padding: 10% 0;
 
   div {
-    // padding: 15% 10%;
     background-color: pink;
     display: inline;
     padding: 20% 15px;
@@ -51,14 +55,31 @@ body {
 
     &:hover {
       cursor: pointer;
-      transform: scale(1.03);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+  }
+}
+
+form {
+  align-self: center;
+}
+
+#search {
+  font-size: 20px;
+  border-radius: 50px;
+  outline: none;
+  padding: 10px 18px;
+  border: 1px solid #c2c2c2;
+  opacity: 0.7;
+
+  &::placeholder {
+    color: #ec4c8a;
   }
 }
 
 @media (max-width: 885px) {
   .cards-main-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
   }
 }

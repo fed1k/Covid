@@ -18,6 +18,37 @@ function App() {
   useEffect(() => {
     dispatch(thunkFunction());
   }, []);
+
+  const searcher = (e) => {
+    const allElements = document.querySelectorAll('.countries h1');
+    if (e.target.value) {
+      allElements.forEach((i) => {
+        // console.log(i.textContent)
+        // if (e.target.value.includes(i.textContent)) {
+        // const myElemen = i.parentElement;
+        // myElemen.style.display = 'block';
+        // if (i.textContent === e.target.value) {
+        const result = i.textContent.toLowerCase().includes(e.target.value.toLowerCase());
+        if (result) {
+          const parent = i.parentElement;
+          parent.style.display = 'block';
+        } else {
+          const parent = i.parentElement;
+          parent.style.display = 'none';
+        }
+        // }
+        // }
+        //   const myElemen = i.parentElement;
+        //   myElemen.style.display = 'none';
+        // }
+      });
+    } else {
+      allElements.forEach((i) => {
+        const papa = i.parentElement;
+        papa.style.display = 'block';
+      });
+    }
+  };
   // Array.from(data);
   // const arrayedData = data.dates;
   // Array.from(arrayedData);
@@ -34,6 +65,9 @@ function App() {
         <p>Covid Watch</p>
         <Setting className="setting" />
       </nav>
+      <form>
+        <input type="search" name="search" id="search" placeholder="Search..." onChange={(e) => searcher(e)} />
+      </form>
       <div className="cards-main-container">
         {data ? Object.entries(data).map((i) => (
           <div className="countries" key={i[1].name}>
