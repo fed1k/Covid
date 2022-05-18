@@ -8,12 +8,12 @@
 
 body {
   overflow-x: hidden;
+  color: white;
 }
 
-.App {
+#App {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .navbar {
@@ -47,15 +47,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
 
-  div {
+  .countries {
     background-color: pink;
     display: inline;
     padding: 20% 15px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.5s;
+    color: black;
+    text-decoration: none;
 
     &:hover {
       cursor: pointer;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.5s;
     }
   }
 }
@@ -75,6 +78,28 @@ form {
   &::placeholder {
     color: #ec4c8a;
   }
+}
+
+.regional-data-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-item {
+  width: 40%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.country {
+  display: flex;
+  justify-content: center;
+  background-color: #ec4c8a;
+  // height: 92vh;
+}
+
+footer {
+  background-color: pink;
 }
 
 @media (max-width: 885px) {

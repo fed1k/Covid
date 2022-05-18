@@ -1,8 +1,6 @@
 const fetchData = async () => {
   const response = await fetch('https://api.covid19tracking.narrativa.com/api/2020-03-10');
   const data = await response.json();
-  // console.log(data.dates['2020-03-10'].countries);
-  // const myArray = [];
   return data;
 };
 const thunkFunction = () => async (dispatch) => {
