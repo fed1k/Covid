@@ -1,4 +1,5 @@
-// import React from 'react';
+import React from 'react';
+import { BsSearch as SearchIcon } from 'react-icons/bs';
 
 const Search = () => {
   const searcher = (e) => {
@@ -24,6 +25,7 @@ const Search = () => {
 
   return (
     <form>
+      <SearchIcon className="search-icon" />
       <input type="search" name="search" id="search" placeholder="Search..." onChange={(e) => searcher(e)} />
     </form>
   );

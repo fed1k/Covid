@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import notFound from '../notFound.png';
 
 const Country = () => {
   const [myData, setMyData] = useState([]);
@@ -10,11 +11,12 @@ const Country = () => {
   useEffect(() => {
     fetchCountry();
   }, []);
-  console.log(myData);
+  const flagsApi = 'https://countryflagsapi.com/png/';
   return (
     <div className="country">
       {myData ? (
         <div className="country-item">
+          {flagsApi + myData.name ? <img src={`${flagsApi + myData.name}`} alt="FLAG IS NOT AVAILABLE" /> : <img src={notFound} alt="Not Found" />}
           <h1>{myData.name}</h1>
           <span>
             {myData.date}
@@ -29,7 +31,9 @@ const Country = () => {
               <span>{i.today_confirmed}</span>
             </div>
           ))
-            : <h5>No Data Available</h5>}
+            : (
+              <h5>Regional data is not Available</h5>
+            )}
         </div>
       ) : <h1>Loading...</h1>}
     </div>

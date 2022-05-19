@@ -8,9 +8,15 @@ import Country from './components/Country';
 import Home from './components/Home';
 
 function App() {
+  // const m = async () => {
+  //   const maha = await fetch('https://countryflagsapi.com/png/br');
+  //   const response = await maha.json();
+  //   console.log(response);
+  // };
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(thunkFunction());
+    // m();
   }, []);
 
   return (
