@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from './searchBar';
-import Countries from './Countries';
+import Countries from './Tountries';
 
 const Home = () => (
   <div>
