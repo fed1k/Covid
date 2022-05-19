@@ -8,15 +8,9 @@ import Country from './components/Country';
 import Home from './components/Home';
 
 function App() {
-  // const m = async () => {
-  //   const maha = await fetch('https://countryflagsapi.com/png/br');
-  //   const response = await maha.json();
-  //   console.log(response);
-  // };
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(thunkFunction());
-    // m();
   }, []);
   return (
     <div className="App">
@@ -31,7 +25,11 @@ function App() {
           <Route path="/:country" element={<Country />} />
         </Routes>
         <footer>
-          <h3>Here is footer finally</h3>
+          <h3>
+            Built by
+            {' '}
+            <a rel="noopener noreferrer" href="https://github.com/fed1k">Firdavs Allamurotov</a>
+          </h3>
         </footer>
       </div>
     </div>

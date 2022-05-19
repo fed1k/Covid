@@ -7,7 +7,6 @@
 }
 
 body {
-  // overflow-x: hidden;
   color: white;
 }
 
@@ -48,6 +47,7 @@ body {
   justify-content: center;
   gap: 18px;
   background-color: rgba(255, 82, 148, 0.8);
+  padding: 30px 0;
 
   .countries {
     background-color: #ec4c8a;
@@ -65,7 +65,7 @@ body {
 
     &:hover {
       cursor: pointer;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
       transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.7s;
       transform: scale(1.2);
     }
@@ -93,7 +93,6 @@ form {
   opacity: 0.7;
   background-color: #ec4c8a;
   color: white;
-  // caret-color: white;
 
   &::placeholder {
     color: white;
@@ -114,7 +113,6 @@ form {
 
 .country-item {
   width: 40%;
-  // border: 1px solid black;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -139,9 +137,19 @@ form {
 }
 
 footer {
-  background-color: #B93B6C;
+  background-color: #b93b6c;
   padding: 40px 0;
   text-align: center;
+
+  a {
+    color: white;
+  }
+}
+
+.header-info {
+  background-color: #b93b6c;
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media (max-width: 885px) {
@@ -152,6 +160,10 @@ footer {
 
   #search {
     font-size: 18px;
+  }
+
+  .header-info {
+    font-size: 14px;
   }
 }
 
@@ -173,5 +185,9 @@ footer {
   .search-icon {
     transform: translate(30px, 15px);
     font-size: 14px;
+  }
+
+  .header-info {
+    font-size: 11px;
   }
 }
