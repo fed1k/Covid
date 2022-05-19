@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="country"
+>
+  <div
+    className="country-item"
+  >
+    <img
+      alt="FLAG IS NOT AVAILABLE"
+      src="https://countryflagsapi.com/png/undefined"
+    />
+    <h1 />
+    <span>
+       
+      confirmed cases
+       
+    </span>
+    <h5>
+      Regional data is not Available
+    </h5>
+  </div>
+</div>
+`;

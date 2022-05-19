@@ -18,7 +18,6 @@ function App() {
     dispatch(thunkFunction());
     // m();
   }, []);
-
   return (
     <div className="App">
       <div id="App">

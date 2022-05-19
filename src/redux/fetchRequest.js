@@ -1,4 +1,4 @@
-const fetchData = async () => {
+export const fetchData = async () => {
   const response = await fetch('https://api.covid19tracking.narrativa.com/api/2020-03-10');
   const data = await response.json();
   return data;
