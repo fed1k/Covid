@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Covid/static/css/main.653caac3.css",
+    "main.js": "/Covid/static/js/main.b74affcc.js",
+    "static/media/notFound.png": "/Covid/static/media/notFound.8988f1052fda0d7c3ae9.png",
+    "static/media/Loading_icon.gif": "/Covid/static/media/Loading_icon.1a32f552ee5280e2aef9.gif",
+    "index.html": "/Covid/index.html",
+    "main.653caac3.css.map": "/Covid/static/css/main.653caac3.css.map",
+    "main.b74affcc.js.map": "/Covid/static/js/main.b74affcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.653caac3.css",
+    "static/js/main.b74affcc.js"
+  ]
+}
