@@ -7,6 +7,7 @@ In this application people can get information about COVID cases over the world.
  * COVID narrative API
 
 ## Live
+[Live demo on Github Pages](https://fed1k.github.io/Covid/)
 [Live demo on Netlify](https://covid-firdavs.netlify.app/)
 
 ## Author:
