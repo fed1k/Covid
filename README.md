@@ -1,4 +1,5 @@
 # COVID WATCH
+### ⚠ Since COVID API used for this project is no longer available, this project does not work properly anymore. 
 In this application people can get information about COVID cases over the world.
 
 ## Built with:
